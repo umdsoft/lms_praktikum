@@ -8,98 +8,14 @@ const router = createRouter({
     {
       path: '/',
       component: () => import('@/layouts/default.vue'),
-      meta: { requiresAuth: true },
+      // meta: { requiresAuth: true },
       children: [
         {
           path: '/',
           name: 'home',
           component: () => import('@/pages/home.vue')
         },
-        {
-          path: '/about',
-          name: 'about',
-          component: () => import('@/pages/about.vue')
-        },
-        {
-          path: '/users',
-          name: 'users',
-          component: () => import('@/pages/users.vue')
-        },
-        {
-          path: '/students',
-          name: 'students',
-          component: () => import('@/pages/manager/students/index.vue'),
-          children: [
-            {
-              path: '/create-pupil',
-              name: 'createPupils',
-              component: () => import('@/pages/manager/group/create-pupil.vue'),
-            }
-          ]
-        },
-        {
-          path: '/lesson',
-          name: 'lesson',
-          component: () => import('@/pages/teacher/lesson/index.vue'),
-        },
-        {
-          path: '/lesson/:id',
-          name: 'lesson-module',
-          component: () => import('@/pages/teacher/lesson/lesson-module.vue')
-        },
-        {
-          path: '/lesson/dars/:id',
-          name: 'lesson-dars',
-          component: () => import('@/pages/teacher/lesson/dars.vue')
-        },
-        {
-          path: '/lesson/dars/create/:id',
-          name: 'lesson-dars-create',
-          component: () => import('@/pages/teacher/lesson/create-dars.vue')
-        },
-        {
-          path: '/leads',
-          name: 'leads',
-          component: () => import('@/pages/call-center/leads.vue')
-
-        },
-        {
-          path: '/lead-details/:id',
-          name: 'lead-details',
-          component: () => import('@/pages/call-center/lead-detail.vue'),
-        },
-        {
-          path: '/groups',
-          name: 'groups',
-          component: () => import('@/pages/manager/groups.vue'),
-          children: [
-
-          ]
-
-        },
-        {
-          path: '/groups/:id',
-          name: 'main-group',
-          component: () => import('@/pages/manager/group/main-group.vue'),
-        },
-
-
-        {
-          path: '/tasks',
-          name: 'tasks',
-          component: () => import('@/pages/call-center/tasks.vue')
-        },
-        {
-          path: '/send-messages',
-          name: 'sendMessages',
-          component: () => import('@/pages/call-center/send-messages.vue')
-        },
-        {
-          path: '/manager',
-          name: 'manager',
-          component: () => import('@/pages/manager/home.vue')
-        },
-      ],
+      ]
 
     },
     // {

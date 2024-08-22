@@ -17,6 +17,11 @@ const sidebarMenu = ref([
     url: '/',
     icon: 'mingcute:home-3-fill'
   },
+  {
+    name: 'Vakansiyalar',
+    url: '/vacancy',
+    icon: 'hugeicons:job-search'
+  },
   
 ])
 

@@ -10,7 +10,7 @@ import { createPinia } from "pinia";
 import piniaPluginPersistedstate from "pinia-plugin-persistedstate";
 import CanvasJSChart from "@canvasjs/vue-charts";
 import JsonExcel from "vue-json-excel3";
-import 'ant-design-vue/dist/reset.css';
+
 const pinia = createPinia();
 pinia.use(piniaPluginPersistedstate);
 

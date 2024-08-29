@@ -24,7 +24,7 @@ const changeSidebar = () => {
 
 <template>
   <div :class="sidebarStore.isSidebar ? 'pl-72' : 'pl-0'"
-    class="fixed w-full  duration-300  z-40 bg-[#F6F6F8]  shadow-md">
+    class="fixed w-full  duration-300  z-40 bg-[#fff]  shadow-md">
     <div class="px-5">
       <div class="flex justify-between items-center">
         <div class=" flex items-center gap-3">
